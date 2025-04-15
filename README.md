@@ -20,3 +20,8 @@ Initialize and Run Terraform Commands {
 
     Once you are done with your practice, remember to run 'terraform destroy' to remove any resources you created, avoiding unnecessary costs.
     }
+
+Create a file called 'terraform.tfvars' in route directory.
+Role is to overide values in variables.tf for more safety.
+    region      = "us-east-1"
+    bucket_name = "terraform_bucket_default"
