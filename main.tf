@@ -1,12 +1,12 @@
 provider "aws" {
-  region = "eu-south-1"
+  region = var.region
 }
 
 resource "aws_s3_bucket" "terraform_bucket" {
-    bucket = "terraform_bucket_1"
+    bucket = var.bucket_name
 }
 
 resource "aws_s3_bucket_acl" "terraform_acl" {
-    bucket = aws_s3_bucket.terraform_bucket
-    acl = "private"
+    bucket = aws_s3_bucket.terraform_bucket.bucket
+    acl    = "private"
 }
