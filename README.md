@@ -1,4 +1,5 @@
 # TerraformBasicsJourney
+
 Learning Terraform basics aiming to get certified by hashicorp
 
 Initialize and Run Terraform Commands {
